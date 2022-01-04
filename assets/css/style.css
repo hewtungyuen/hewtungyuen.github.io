@@ -266,6 +266,7 @@ section {
 
 .section-title {
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 .section-title h2 {
   font-size: 32px;
@@ -287,6 +288,8 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+  padding-right: 180px;
+  justify-items: auto;
 }
 
 /*--------------------------------------------------------------
@@ -492,7 +495,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(101, 97, 97, 0.769);
   position: absolute;
   left: 0;
   right: 0;
@@ -506,7 +509,7 @@ section {
   opacity: 1;
   left: 0;
   right: 0;
-  bottom: -60px;
+  bottom: -100px;
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
@@ -521,6 +524,15 @@ section {
   transition: 0.3s;
   width: 50%;
 }
+
+.portfolio .portfolio-wrap .portfolio-links .title {
+  font-size: larger;
+  font-weight: bold;
+  padding: 0px 10px;
+  color: #eaedf0;
+  text-align: center;
+}
+
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
