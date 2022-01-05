@@ -74,7 +74,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Project Name</h2>
+          <h2>Urban Redevelopment Authority Internship</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Portfoio Details</li>
@@ -94,39 +94,78 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                </div>
+                <!-- <div class="swiper-slide"> -->
+                  <img src="assets/img/portfolio/ura_long.jpg" alt="">
+                <!-- </div> -->
 
               </div>
-              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Data Science</li>
+                <li><strong>Tools and technologies</strong>: HuggingFace, Transfer Learning, PyTorch, SentenceTransformers, BeautifulSoup4, Python Pandas</li>
+
               </ul>
             </div>
             
           </div>
 
           <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>My Internship Experience</h2>
+
+              <strong>Task 1: web scraping of URA circulars</strong>
+
+              <br>
+
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                The first task that I worked on was to scrape URA circular information from <a href="https://www.ura.gov.sg/Corporate/Guidelines/Circulars">this website</a>,
+                storing the text information as an archive for future usage. 
+
+                The steps that I followed were as follows:
+                <ol type="1">
+                  
+                  <li>Scrape data using BeautifulSoup4</li>
+                  <li>Extracted specific pieces of information using regular expressions</li>
+                  <li>Stored the data in a Python Pandas dataframe</li>
+                  <li>Converted the dataframe into a comma seperated file </li>
+
+                </ol>
+
+              </p>
+
+              <strong> Task 2: parking appeal similarity</strong>
+              <p>
+                The next task was my main task, which was to develop a machine learning model to identify semantically similar carpark appeals.
+                This model will be used to assist URA carpark officers in evaluating parking offense appeal requests, reducing their workload.
+                
+                The steps that I used to calculate text similarity were as follows:
+
+                <ol type="1">
+                  <li>From an archive of parking offense appeal e-mails, obtain two e-mails in the form of text files</li>
+                  <li>using the pre trained models, convert the text into sentence embeddings </li>
+                  <li>calculate cosine similarity score for the two text embeddings obtained</li>
+                </ol>
+                
+                The cosine similarity scores obtained can tell us if the two parking offense appeals are semantically similar or not.
+
+                <br>
+
+                
+              </p>
+
+              <p>
+                <strong> Internship Takeaways</strong>
+                <br>
+                The three months that I have spent in URA was enriching and eye opening.
+                This internshp not only has enabled me to learn new technologies, but also allowed me to experience working on a real-world data science project 
+                while communicating with various stakeholders from different departments in the company.
+                I would like to thank my supervisors Yang Rui, Sean, and Eileen,
+                for the guidance and feedback during my internship. 
               </p>
             </div>
 
@@ -148,7 +187,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/" style="color: #263434" >BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
