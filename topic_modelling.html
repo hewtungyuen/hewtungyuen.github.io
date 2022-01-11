@@ -127,14 +127,34 @@
           <div class="portfolio-description">
             <h2>Project Description</h2>
 
+            <strong>Objective</strong>
+              <p>
+                The aim of this project is to create a model to categorise news headlines into distinct topics. 
+                This dataset, taken from <a href="https://www.kaggle.com/aaron7sun/stocknews">Kaggle</a>, contains a total of 73537 unique news headlines 
+                taken from the <a href="https://www.reddit.com/r/worldnews/?hl=">Reddit World News</a> channel.
+                
+              </p>
+            <strong>Methodology</strong>
             <p>
-              This dataset contains a total of 73537 unique news headlines taken from the <a href="https://www.reddit.com/r/worldnews/?hl=">Reddit World News</a> channel. 
-              The dataset is taken from <a href="https://www.kaggle.com/aaron7sun/stocknews">Kaggle</a>.
+              To begin, I performed text processing on the news headlines, which includes removing punctuation as well as lemmatizing. Lemmatizing is the process where
+              words are being reduced to their root form. For instance, 'playing' would be reduced to 'play'.
+
+              After lemmatizing, I created a document term matrix, which is a mathematical matrix that describes the frequency of keywords that occur in a collection of documents. 
+              Rows in the matrix correspond to documents in the collection, while columns correspond to the keyword. In our case, rows correspond to the news headlines.
             </p>
 
             <p>
-              The aim of this project is to create a model to categorise news headlines into distinct topics. I used natural language processing and non-negative matrix factorization to build the model.
+              Next, I applied Non-Negative Matrix Factorization (NMF) on the document term matrix. 
+              This is a statistical method that helps to reduce the dimension of the input corpora. 
+              The output of NMF is another matrix, where each row represents a specific topic, and the columns representing the keywords in each topic.
             </p>
+            
+            <strong>Conclusion</strong>
+            <p>
+              After tuning the parameters of the NMF model, I found that the news headlines are best categroised into 10 distinct topics. 
+            </p>
+
+
           </div>
 
         </div>

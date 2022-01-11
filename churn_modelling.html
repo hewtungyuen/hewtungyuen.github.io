@@ -126,22 +126,36 @@
           <div class="portfolio-description">
               <h2>Project Description</h2>
 
-              <p>
-                The churn rate, also known as the rate of attrition or customer churn, is the rate at which customers stop doing business with an entity.
-              </p>
-
-              <p>
-                This dataset contains details of a bank's customers, with one column being a binary variable reflecting if the customer left the bank (closed the account).
-              </p>
-
+              <strong>Objective</strong>
               <p>
                 The aim of this project is to predict if a customer of the bank decides to terminate his or her bank membership or not, by applying logistic regression and artificial neural networks.
+                This dataset, taken from <a href="https://www.kaggle.com/shrutimechlearn/churn-modelling">Kaggle</a>, contains details of a bank's customers, with one column being a binary variable reflecting if the customer left the bank (closed the account).
+              </p>
+
+              <strong>Methodology</strong>
+
+              <p>
+                I began this project by cleaning the data as well as performing exploratory data analysis (EDA). 
+                Next, I performed one-hot encoding, which is the process of converting categorical data into numerical data.
+                In this case, we had 'Geography' and 'Gender' as categorical variables, hence they have to be one-hot encoded. 
               </p>
 
               <p>
-                The dataset is taken from <a href="https://www.kaggle.com/shrutimechlearn/churn-modelling">Kaggle</a>.
+                Afterwards, I plotted a correlation plot of the customer features against the likelihood of the customer leaving the bank.
+                The correlation plot shows that the top three factors affecting customer churn is the customer's age, if the customer lives in Germany,
+                and if the customer is an active member of the bank. 
               </p>
-                
+
+              <p>
+                Then, I split the data into training and test sets, performed logistic regression as well as binary classification with artifical neural networks. 
+              </p>
+
+              <strong>Conclusion</strong>
+
+              <p>
+                The F1 score when using artifical neural networks was 0.75, whereas it was 0.59 when logistic regression was used. 
+              </p>
+
             </div>
 
         </div>

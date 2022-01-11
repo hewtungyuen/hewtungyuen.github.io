@@ -129,13 +129,32 @@
           <div class="portfolio-description">
               <h2>Project Description</h2>
 
+              <strong>Objective</strong>
               <p>
-                The aim of this project is to analyse the sentiment of korean drama reviews with the use of web scraping as well as natural language processing. I will be analysing the drama The King: Eternal Monarch. This drama is one of the most anticipated series in the first half of 2020, with renowned cast and a large production budget.
+                The aim of this project is to analyse the sentiment of korean drama reviews with the use of web scraping as well as natural language processing. 
+                I will be analysing the drama The King: Eternal Monarch. This drama is one of the most anticipated series in the first half of 2020, with renowned cast and a large production budget.
+              </p>
+
+              <strong>Methodology</strong>
+              <p>
+                I scraped the data from <a href="http://asianwiki.com/The_King:_Eternal_Monarch">this website</a> using BeautifulSoup4. 
+                After performing data cleaning with regular expressions, I performed sentiment analysis on the reviews using Vader from NLTK. 
               </p>
 
               <p>
-                The original website can be found <a href="http://asianwiki.com/The_King:_Eternal_Monarch">here</a>.
+                Vader relies on a dictionary that maps lexical features to emotion intensities which are known as sentiment scores. In this methodology,
+                every word in the vocabulary will be assigned as having a positive or negative sentiment, and if the sentiment is intense or mild. 
+                To illustrate, 'amazing' and 'good' will be assigned a positive sentiment, with 'amazing' being more intense than 'good'.
+                The sentiment score of a sentence can thus be obtained by summing up the emotion intensities of each word in the sentence. 
               </p>
+
+              <strong>Conclusion</strong>
+              <p>
+                After performing sentiment analysis on the reviews and interpreting the sentiment scores,
+                it can be seen that out of 880 reviewers, 83% of them enjoyed the drama. 
+              </p>
+
+
 
             </div>
 
