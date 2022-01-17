@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Self Initiated Data Science Project - K Drama Sentiment Analysis</title>
+  <title>Self Initiated Data Engineering Project: Twitter ELT pipeline</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -74,7 +74,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Self Initiated Project - K Drama Sentiment Analysis</h2>
+          <h2>Self Initiated Data Engineering Project: Twitter ELT pipeline</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Portfoio Details</li>
@@ -90,7 +90,7 @@
 
         <div class="row gy-4">
 
-          <!-- <div class="col-lg-8">
+          <!-- <div class="col-lg-7">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
@@ -115,48 +115,46 @@
             <div class="portfolio-info">
               <h3>Information</h3>
               <ul>
-                <li><strong>Category</strong>: Data Science (Natural Language processing) </li>
-                <li><strong>Tools and Technologies</strong>: 
-                  Python Pandas, Data Visualisation (MatPlotLib, Seaborn), 
-                  Natural Language Processing (NLTK, Regular Expressions, WordCloud), BeautifulSoup
-                </li>
-                <li> <a href = "https://github.com/hewtungyuen/kdrama_reviews"> GitHub Link</a></li>
+                <li><strong>Category</strong>: Data Engineering </li>
+                <li><strong>Tools and Technologies</strong>: Tweepy, MongoDB, Apache Airflow, smtplib</li>
+                <li> <a href = "https://github.com/hewtungyuen/twitter"> GitHub Link</a></li>
+
               </ul>
             </div>
             
           </div>
 
           <div class="portfolio-description">
-              <h2>Project Description</h2>
+            <h2>Project Description</h2>
 
-              <strong>Objective</strong>
+            <strong>Objective</strong>
               <p>
-                The aim of this project is to analyse the sentiment of Korean drama reviews with the use of web scraping as well as Natural Language Processing. 
-                I will be analysing the drama The King: Eternal Monarch. This drama is one of the most anticipated series in the first half of 2020, with renowned cast and a large production budget.
+                The aim of this project is to develop an ELT (extract, load, transform) pipeline on Twitter tweets from <a href = https://twitter.com/WSJ>@WSJ</a> to preodically process and email the top tweets of the day according to retweet count. 
+                I used the tweepy library to extract the tweets, MongoDB to store them, the smtplib library to send e-mails, and Apache Airflow for job scheduling. 
+                
               </p>
+              
+            <strong>Methodology</strong>
+            <p>
+                <u>Extract:</u> Firstly, I used the tweepy library to extract tweets from Wall Street Journal's Twitter account. 
+            </p>
+            
+            <p>
+                <u>Load:</u> I stored the tweets into a MongoDB database, with features such as the timestamp that the tweet was created, 
+                the number of retweets, and the tweet text content.
+            </p>
 
-              <strong>Methodology</strong>
-              <p>
-                I scraped the data from <a href="http://asianwiki.com/The_King:_Eternal_Monarch">this website</a> using BeautifulSoup. 
-                After performing data cleaning with regular expressions, I performed sentiment analysis on the reviews using Vader from NLTK. 
-              </p>
+            <p>
+                <u>Transform:</u> Using MongoDB queries, I retrieved the top three tweets with the highest retweet count, and used the smtplib module to send an automated e-mail
+                containing the top three tweets for the day. 
+            </p>
 
-              <p>
-                Vader relies on a dictionary that maps lexical features to emotion intensities which are known as sentiment scores. In this methodology,
-                every word in the vocabulary will be assigned as having a positive or negative sentiment, and if the sentiment is intense or mild. 
-                To illustrate, 'amazing' and 'good' will be assigned a positive sentiment, with 'amazing' being more intense than 'good'.
-                The sentiment score of a sentence can thus be obtained by summing up the emotion intensities of each word in the sentence. 
-              </p>
-
-              <strong>Conclusion</strong>
-              <p>
-                After performing sentiment analysis on the reviews and interpreting the sentiment scores,
-                it can be seen that out of 880 reviewers, 83% of them enjoyed the show. 
-              </p>
+            <p>
+                <u>Job Scheduling:</u> Finally, I used Apache Airflow to perform job scheduling on the ELT pipeline, allowing the automated email to be sent daily.
+            </p>
 
 
-
-            </div>
+          </div>
 
         </div>
 
