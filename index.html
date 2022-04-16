@@ -83,7 +83,7 @@
 
         <div class="section-title">
           <h2>About Me</h2>
-
+          <img src="assets/img/climbing.jpg" style="float:right; width:300px; height:auto;" alt="">
           <p>
             My name is Tung Yuen, a Year 2 student pursuing a Bachelor of Science in Business Analytics at the National University of Singapore.
           </p>
@@ -91,15 +91,19 @@
           <p>
             I have a strong interest in the field of data. With the vast volume of data generated in our everyday lives, 
             it is fascinating that enterprises are able to store and process big data that enables meaningful business insights to be drawn from them.
+            
           </p>
           <br>
           <p>
             In my free time, I enjoy sports such as rock climbing, squash, and table tennis.
+            
           </p>
-
+          
         </div>
-
+        
       </div>
+
+      
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -124,15 +128,22 @@
             
 
             <h5>Web Development</h5>
-            <li>HTML, CSS</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>VueJS</li>
             <!-- <li>MongoDB, Express, React, NodeJS</li> -->
-            <li>Python Tkinter</li>
+            <!-- <li>Python Tkinter</li> -->
 
             <br>
 
             <h5>Data Engineering</h5>
             <li>Apache Airflow</li>
 
+            <br>
+            <h5>Miscellaneous</h5>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Scraping</li>
+            <li>Python Tkinter</li>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -148,12 +159,9 @@
             <h5>Databases</h5>
             <li>MySQL</li>
             <li>MongoDB</li>
+            <li>Google Firebase</li>
+            <li>Google BigQuery</li>
 
-            <br>
-            <h5>Miscellaneous</h5>
-            <li>Object Oriented Programming</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Web Scraping</li>
           </div>
 
         </div>
@@ -242,20 +250,44 @@
           <h2>Projects</h2>
         </div>
 
-        <!-- <div class="row" data-aos="fade-up">
+        <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-intern">Internships</li>
+              <li data-filter=".filter-dataeng">Data Engineering</li>
+              <li data-filter=".filter-software">Software Development</li>
+              <li data-filter=".filter-datasci">Data Science</li>
             </ul>
           </div>
-        </div> -->
+        </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dataeng">
+            <a href = "SGX.html"> 
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/SGX.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <div class="title"> IS3107 (Data Engineering) - SGX Stock Data Pipeline </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software">
+            <a href = "BT3103.html"> 
+              <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/BT3103.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <div class="title"> BT3103 (Application Systems Development for Business Analytics) - Workflow Operating System </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dataeng">
             <a href = "twitter_elt.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/wsj.png" class="img-fluid" alt="">
@@ -266,7 +298,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-intern">
             <a href = "ura_internship.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/ura.jpg" class="img-fluid" alt="">
@@ -277,7 +309,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software">
             <a href = "ecommerce_system.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/ecommerce.png" class="img-fluid" alt="">
@@ -288,7 +320,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-datasci">
             <a href = "churn_modelling.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/churn_modelling.png" class="img-fluid" alt="">
@@ -299,7 +331,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-datasci">
             <a href = "kdrama.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/kdrama.jpg" class="img-fluid" alt="">
@@ -311,7 +343,7 @@
           </div>
 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software">
             <a href = "rc4.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/rc4.jpg" class="img-fluid" alt="">
@@ -322,7 +354,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-datasci">
             <a href = "topic_modelling.html"> 
               <div class="portfolio-wrap">
                   <img src="assets/img/portfolio/news.png" class="img-fluid" alt="">
@@ -351,12 +383,13 @@
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="info">
               <div class="linkedin">
-                <i class="bx bxl-linkedin"></i>
+
+                <a href="https://www.linkedin.com/in/hewtungyuen/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 <h4>LinkedIn:</h4>
                 <p>linkedin.com/in/hewtungyuen</p>
               </div>
 
-              <div class="email">
+              <div>
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>hew.tungyuen@u.nus.edu</p>
